@@ -12,7 +12,7 @@ angular
       .when('/', {
         templateUrl: 'views/meanstore/main.html'
       })
-      .when('/blog', {
+      .when('/list', {
         templateUrl: 'views/meanstore/item-list.html',
         controller: 'itemsControl'
       })
@@ -20,11 +20,11 @@ angular
         templateUrl: 'views/meanstore/item-create.html',
         controller: 'itemsControl'
       })
-      .when('/blog/:id', {
+      .when('/list/:id', {
         templateUrl: 'views/meanstore/item-detail.html',
         controller: 'itemControl'
       })
-      .when('/blog/:id/edit', {
+      .when('/list/:id/edit', {
         templateUrl: 'views/meanstore/item-editDetail.html',
         controller: 'itemControl'
       })

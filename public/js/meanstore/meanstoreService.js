@@ -8,7 +8,7 @@ angular.module('meanstore')
 				create: { method: 'POST'}
 			});
 	})
-	.factory('PostSvc', function($resource) {
+	.factory('meanstoreService', function($resource) {
 		return $resource('api/collections/meanstore/:id',
 			{
 				id: '@_id'

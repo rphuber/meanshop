@@ -1,6 +1,6 @@
-<button data-ng-click="createPost()">Create New Post</button>
-<section data-ng-repeat="post in posts">
-	<h2>{{post.title}}</h2>
-	<p>{{post.content}}</p>
-	<a href="#/blog/{{post._id}}">view more</a>
+<button data-ng-click="createItem()">Create New Post</button>
+<section data-ng-repeat="item in items">
+	<h2>{{item.title}}</h2>
+	<p>{{item.content}}</p>
+	<a href="#/list/{{item._id}}">view more</a>
 </section>
