@@ -3,5 +3,5 @@
 	<h3>{{item.price | currency}}</h3>
 	<p>{{item.content}}</p>
 	<a href="#/list/{{item._id}}">view more</a>
-	<button class="btn btn-default" ng-click="addItemToCart()">Add to Cart</button>
+	<button class="btn btn-default" ng-click="addItemToCart(item)">Add to Cart</button>
 </section>
