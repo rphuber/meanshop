@@ -25,7 +25,7 @@ angular.module('meanstore')
   	};
 
   })
-   .controller('shopItemsControl', function ($scope, $location, shopItemsService) {
+   .controller('shopItemsControl', function ($scope, $location, cartItemsService) {
 
     $scope.addItemToCart = function(item) {
       shopItemsService.create(item);
