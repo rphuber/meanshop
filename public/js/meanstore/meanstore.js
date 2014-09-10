@@ -12,20 +12,20 @@ angular
       .when('/', {
         templateUrl: 'views/meanstore/main.html'
       })
-      .when('/list', {
-        templateUrl: 'views/meanstore/item-list.html',
+      .when('/meanstoreAdmin/list', {
+        templateUrl: 'views/meanstoreAdmin/item-list.html',
         controller: 'itemsControl'
       })
       .when('/new', {
-        templateUrl: 'views/meanstore/item-create.html',
+        templateUrl: 'views/meanstoreAdmin/item-create.html',
         controller: 'itemsControl'
       })
       .when('/list/:id', {
-        templateUrl: 'views/meanstore/item-detail.html',
+        templateUrl: 'views/meanstoreAdmin/item-detail.html',
         controller: 'itemControl'
       })
       .when('/item/:id/edit', {
-        templateUrl: 'views/meanstore/item-editDetail.html',
+        templateUrl: 'views/meanstoreAdmin/item-editDetail.html',
         controller: 'itemControl'
       })
       .otherwise({
