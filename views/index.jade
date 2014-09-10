@@ -3,5 +3,11 @@ extends layout
 block content
 
   .container
-    h3.text-muted Welcome to the mean store!
+    header
+      ul(class="nav nav-pills pull-right")
+        li
+          a(ng-href="#") Home
+        li
+          a(ng-href="#/list") Shop
+      h3.text-muted Welcome to the mean store!
     ng-view
