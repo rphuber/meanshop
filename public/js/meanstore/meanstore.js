@@ -13,7 +13,7 @@ angular
         templateUrl: 'views/meanstore/main.html'
       })
       .when('/list', {
-        templateUrl: 'views/meanstore/list.html',
+        templateUrl: 'views/meanstore/store-list.html',
         controller: 'itemsControl'
       })
       .when('/meanstoreAdmin/list', {
