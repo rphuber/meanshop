@@ -1,0 +1,6 @@
+<section class="panel" data-ng-repeat="item in items">
+	<h2>{{item.title}}</h2>
+	<h3>{{item.price | currency}}</h3>
+	<p>{{item.content}}</p>
+	<a href="#/list/{{item._id}}">view more</a>
+</section>

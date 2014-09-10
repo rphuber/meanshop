@@ -12,6 +12,10 @@ angular
       .when('/', {
         templateUrl: 'views/meanstore/main.html'
       })
+      .when('/list' {
+        templateUrl: 'views/meanstore/list.html',
+        controller: 'itemsControl'
+      })
       .when('/meanstoreAdmin/list', {
         templateUrl: 'views/meanstoreAdmin/item-list.html',
         controller: 'itemsControl'
