@@ -13,19 +13,19 @@ angular
         templateUrl: 'views/meanstore/main.html'
       })
       .when('/blog', {
-        templateUrl: 'views/meanstore/blog-list.html',
+        templateUrl: 'views/meanstore/item-list.html',
         controller: 'itemsControl'
       })
       .when('/new', {
-        templateUrl: 'views/meanstore/blog-create.html',
+        templateUrl: 'views/meanstore/item-create.html',
         controller: 'itemsControl'
       })
       .when('/blog/:id', {
-        templateUrl: 'views/meanstore/blog-detail.html',
+        templateUrl: 'views/meanstore/item-detail.html',
         controller: 'itemControl'
       })
       .when('/blog/:id/edit', {
-        templateUrl: 'views/meanstore/blog-editDetail.html',
+        templateUrl: 'views/meanstore/item-editDetail.html',
         controller: 'itemControl'
       })
       .otherwise({
