@@ -1,4 +1,25 @@
-<input type="text" data-ng-model="item.title" value="{{item.title}}">
-<input type="text" data-ng-model="item.price" value="{{item.price}}">
-<textarea data-ng-model="item.content">{{item.content}}</textarea>
-<button data-ng-click="edit()">Update Post</button>
+<div class="form-horizontal">
+	<div class="form-group">
+		<label for="itemName" class="col-sm-2 vontrol-label">Item</label>
+		<div class="col-sm-4">
+			<input class="form-control" type="text" data-ng-model="item.title" value="{{item.title}}">
+		</div>
+	</div>
+	<div class="form-group">
+		<label for="itemPrice" class="col-sm-2 control-label">Price</label>
+		<div class="col-sm-4">
+			<input type="text" class="form-control" data-ng-model="item.price" value="{{item.price}}">
+		</div>
+	</div>
+	<div class="form-group">
+		<label for="itemDescription" class="col-sm-2 control-label">Description</label>
+		<div class="col-sm-4">
+			<textarea class="form-control" data-ng-model="item.content">{{item.content}}</textarea>
+		</div>
+	</div>
+	<div class="form-group">
+		<div class="col-sm-offset-2 col-sm-10">
+			<button class="btn btn-default" data-ng-click="edit()">Update Post</button>
+		</div>
+	</div>
+</div>
