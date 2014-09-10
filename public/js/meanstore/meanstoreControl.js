@@ -1,7 +1,7 @@
 'use strict';
 
 angular.module('meanstore')
-  .controller('itemsControl', function ($scope, $location, itemsService) {
+  .controller('itemsControl', function ($scope, $location, itemsService, cartItemsService) {
 
     $scope.createItem = function() {
     	$location.path('/meanstoreAdmin/new');
@@ -11,6 +11,14 @@ angular.module('meanstore')
     	$location.path('/meanstoreAdmin/list');
     };
     $scope.items = itemsService.query();
+
+    $scope.addItemToCart = function(item) {
+      cartItemsService.create(item);
+      console.log(item);
+      $location.path('/meanstoreAdmin/list');
+    };
+    $scope.cartItems = cartItemService.query();
+
   })
   .controller('itemControl', function($scope, $location, $routeParams, itemService) {
 
@@ -24,13 +32,4 @@ angular.module('meanstore')
   		$location.path('/meanstoreAdmin/list');
   	};
 
-  })
-   .controller('shopItemsControl', function ($scope, $location, cartItemsService) {
-
-    $scope.addItemToCart = function(item) {
-      cartItemsService.create(item);
-      console.log(item);
-      $location.path('/meanstoreAdmin/list');
-    };
-    $scope.cartItems = cartItemService.query();
   });
