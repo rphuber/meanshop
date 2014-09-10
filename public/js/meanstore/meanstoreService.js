@@ -1,6 +1,6 @@
 'use strict';
 angular.module('meanstore')
-	.factory('meanstoreService', function($resource) {
+	.factory('itemsService', function($resource) {
 		return $resource('api/collections/meanstore',
 			{},
 			{
@@ -8,7 +8,7 @@ angular.module('meanstore')
 				create: { method: 'POST'}
 			});
 	})
-	.factory('meanstoreService', function($resource) {
+	.factory('itemService', function($resource) {
 		return $resource('api/collections/meanstore/:id',
 			{
 				id: '@_id'
