@@ -4,5 +4,5 @@
  */
 
 exports.index = function(req, res){
-  res.render('index', { title: 'Express', ngApp: 'meanstore' });
+  res.render('index', { title: 'The Mean Store', ngApp: 'meanstore' });
 };
