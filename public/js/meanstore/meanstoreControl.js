@@ -20,7 +20,7 @@ angular.module('meanstore')
   		$location.path('/list');
   	};
   	$scope.edit = function() {
-  		itemService.edit($scope.post);
+  		itemService.edit($scope.item);
   		$location.path('/list');
   	};
 
