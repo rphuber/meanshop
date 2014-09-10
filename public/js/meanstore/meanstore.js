@@ -12,7 +12,7 @@ angular
       .when('/', {
         templateUrl: 'views/meanstore/main.html'
       })
-      .when('/list' {
+      .when('/list', {
         templateUrl: 'views/meanstore/list.html',
         controller: 'itemsControl'
       })
