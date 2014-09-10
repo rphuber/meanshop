@@ -17,7 +17,7 @@ angular.module('meanstore')
       console.log(item);
       $location.path('/meanstoreAdmin/list');
     };
-    $scope.cartItems = cartItemService.query();
+    $scope.cartItems = cartItemsService.query();
 
   })
   .controller('itemControl', function($scope, $location, $routeParams, itemService) {
