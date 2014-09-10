@@ -1,5 +1,12 @@
 extends layout
 
 block content
+
   .container
-    ng-view
+	  header
+	  	ul.nav.nav-pills.pull-right
+	    	li: a (ng-href="#") Home
+	    	li: a (ng-href="#/list") Mean Store!
+	  	h3.text-muted Welcome to the mean store!
+
+	  ng-view
