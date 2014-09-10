@@ -24,7 +24,7 @@ angular
         templateUrl: 'views/meanstore/item-detail.html',
         controller: 'itemControl'
       })
-      .when('/list/:id/edit', {
+      .when('/item/:id/edit', {
         templateUrl: 'views/meanstore/item-editDetail.html',
         controller: 'itemControl'
       })
