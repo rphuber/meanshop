@@ -7,7 +7,7 @@ angular.module('meanstore')
     	$location.path('/meanstoreAdmin/new');
     };
     $scope.newItem = function(item) {
-    	itemsService.create(item)
+    	itemsService.create(item);
     	$location.path('/meanstoreAdmin/list');
     };
     $scope.items = itemsService.query();
@@ -24,4 +24,12 @@ angular.module('meanstore')
   		$location.path('/meanstoreAdmin/list');
   	};
 
+  })
+   .controller('shopItemsControl', function ($scope, $location, shopItemsService) {
+
+    $scope.addItemToCart = function(item) {
+      shopItemsService.create(item);
+      $location.path('/meanstoreAdmin/list');
+    };
+    $scope.cartItems = cartItemService.query();
   });
