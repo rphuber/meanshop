@@ -7,20 +7,20 @@ angular.module('meanstore')
     	$location.path('/new');
     };
     $scope.newPost = function(post) {
-    	PostsSvc.create(post)
+    	meanstoreService.create(post)
     	$location.path('/blog');
     };
-    $scope.posts = PostsSvc.query();
+    $scope.posts = meanstoreService.query();
   })
   .controller('itemControl', function($scope, $location, $routeParams, meanstoreService) {
 
-  	$scope.post = PostSvc.show({ id: $routeParams.id });
+  	$scope.post = meanstoreService.show({ id: $routeParams.id });
   	$scope.delete = function() { 
-  		PostSvc.delete({ id: $routeParams.id });
+  		meanstoreService.delete({ id: $routeParams.id });
   		$location.path('/blog');
   	};
   	$scope.edit = function() {
-  		PostSvc.edit($scope.post);
+  		meanstoreService.edit($scope.post);
   		$location.path('/blog');
   	};
 
