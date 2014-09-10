@@ -17,19 +17,19 @@ angular
         controller: 'itemsControl'
       })
       .when('/meanstoreAdmin/list', {
-        templateUrl: 'views/meanstoreAdmin/item-list.html',
+        templateUrl: 'views/meanstoreAdmin/admin-list.html',
         controller: 'itemsControl'
       })
-      .when('/new', {
-        templateUrl: 'views/meanstoreAdmin/item-create.html',
+      .when('/meanstoreAdmin/new', {
+        templateUrl: 'views/meanstoreAdmin/admin-create.html',
         controller: 'itemsControl'
       })
-      .when('/list/:id', {
-        templateUrl: 'views/meanstoreAdmin/item-detail.html',
+      .when('/meanstoreAdmin/list/:id', {
+        templateUrl: 'views/meanstoreAdmin/admin-detail.html',
         controller: 'itemControl'
       })
-      .when('/item/:id/edit', {
-        templateUrl: 'views/meanstoreAdmin/item-editDetail.html',
+      .when('/meanstoreAdmin/item/:id/edit', {
+        templateUrl: 'views/meanstoreAdmin/admin-editDetail.html',
         controller: 'itemControl'
       })
       .otherwise({

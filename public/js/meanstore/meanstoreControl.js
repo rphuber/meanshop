@@ -4,11 +4,11 @@ angular.module('meanstore')
   .controller('itemsControl', function ($scope, $location, itemsService) {
 
     $scope.createItem = function() {
-    	$location.path('/new');
+    	$location.path('/meanstoreAdmin/new');
     };
     $scope.newItem = function(item) {
     	itemsService.create(item)
-    	$location.path('/list');
+    	$location.path('/meanstoreAdmin/list');
     };
     $scope.items = itemsService.query();
   })
@@ -17,11 +17,11 @@ angular.module('meanstore')
   	$scope.item = itemService.show({ id: $routeParams.id });
   	$scope.delete = function() { 
   		itemService.delete({ id: $routeParams.id });
-  		$location.path('/list');
+  		$location.path('/meanstoreAdmin/list');
   	};
   	$scope.edit = function() {
   		itemService.edit($scope.item);
-  		$location.path('/list');
+  		$location.path('/meanstoreAdmin/list');
   	};
 
   });
