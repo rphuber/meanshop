@@ -10,11 +10,11 @@ angular.module('meanstore')
     	itemsService.create(item);
     	$location.path('/meanstoreAdmin/list');
     };
+
     $scope.items = itemsService.query();
 
     $scope.addItemToCart = function(item) {
       cartItemsService.create(item);
-      console.log(item);
       $location.path('/meanstore/cartList');
     };
 
