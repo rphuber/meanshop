@@ -3,15 +3,5 @@ extends layout
 block content
 
   .container
-    header
-      ul(class="nav nav-pills pull-right")
-        li
-          a(ng-href="#") Home
-        li
-          a(ng-href="#/list") Shop
-        li
-          a(ng-href="#/meanstore/cartlist") Cart 
-        li
-          a(ng-href="#/meanstoreAdmin/list") Admin 
-      h3.text-muted Welcome to the mean store!
+    site-menu
     ng-view
