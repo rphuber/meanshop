@@ -15,7 +15,7 @@ angular.module('meanstore')
 
     $scope.addItemToCart = function(item) {
       var newCartItem = {
-        title: item.title,
+        name: item.name,
         price: item.price,
         description: item.description,
         reviews: item.reviews
@@ -23,6 +23,10 @@ angular.module('meanstore')
       cartItemsService.create(newCartItem);
       $location.path('/meanstore/cartlist');
     };
+
+    $scope.removeItemFromCart = function(item){
+      cartItemsService.delete(item);
+    }
 
     $scope.cartItems = cartItemsService.query();
 
