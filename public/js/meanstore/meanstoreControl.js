@@ -24,7 +24,7 @@ angular.module('meanstore')
       $location.path('/meanstore/cartlist');
     };
 
-    $scope.removeItemFromCart = function(){
+    $scope.removeItemFromCart = function(item){
       cartItemService.delete({ id : item._id });
       $location.path('/meanstore/cartlist');
     };

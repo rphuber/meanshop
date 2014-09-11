@@ -3,7 +3,6 @@ angular.module('meanstore')
 	.factory('itemsService', function($resource) {
 		return $resource('api/collections/meanstore',
 			{
-				id: '@_id'
 			},
 			{
 				query: { method: 'GET', isArray: true },
