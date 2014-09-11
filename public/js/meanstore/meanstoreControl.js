@@ -30,7 +30,7 @@ angular.module('meanstore')
     };
 
   })
-  .controller('itemControl', function($scope, $location, $routeParams, itemService cartItemService) {
+  .controller('itemControl', function($scope, $location, $routeParams, itemService, cartItemService) {
 
   	$scope.item = itemService.show({ id: $routeParams.id });
   	$scope.delete = function() { 
