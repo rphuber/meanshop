@@ -26,7 +26,7 @@ angular.module('meanstore')
     $scope.cartItems = cartItemsService.query();
 
     $scope.backToStore = function () {
-      $lcoation.path('/meanstore/list');
+      $location.path('/meanstore/list');
     };
 
   })
