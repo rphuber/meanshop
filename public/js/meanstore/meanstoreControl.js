@@ -1,7 +1,7 @@
 'use strict';
 
 angular.module('meanstore')
-  .controller('itemsControl', function ($scope, $location, itemsService, cartItemsService) {
+  .controller('itemsControl', function ($scope, $location, itemsService, cartItemsService, cartItemService) {
 
     $scope.createItem = function() {
     	$location.path('/meanstoreAdmin/new');
@@ -24,9 +24,10 @@ angular.module('meanstore')
       $location.path('/meanstore/cartlist');
     };
 
-    $scope.removeItemFromCart = function(item){
-      cartItemsService.delete({ id : item._id });
-    }
+    $scope.removeItemFromCart = function(){
+      cartItemService.delete({ id : item._id });
+      $location.path('/meanstore/cartlist');
+    };
 
     $scope.cartItems = cartItemsService.query();
 
