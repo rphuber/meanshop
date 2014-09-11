@@ -25,7 +25,7 @@ angular.module('meanstore')
     };
 
     $scope.removeItemFromCart = function(item){
-      cartItemsService.delete(item._id);
+      cartItemsService.delete({ id : item._id });
     }
 
     $scope.cartItems = cartItemsService.query();

@@ -1,7 +1,7 @@
 <button class="btn btn-default" data-ng-click="createItem()">Create New Item</button>
 <section class="panel" data-ng-repeat="item in items">
-	<h2>{{item.title}}</h2>
+	<h2>{{item.name}}</h2>
 	<h3>{{item.price | currency}}</h3>
-	<p>{{item.content}}</p>
+	<p>{{item.description}}</p>
 	<a href="#/meanstoreAdmin/list/{{item._id}}">view more</a>
 </section>
