@@ -15,7 +15,7 @@ angular.module('meanstore')
 
     $scope.addItemToCart = function(item) {
       var newCartItem = {
-        name: item.name,
+        title: item.title,
         price: item.price,
         description: item.description,
         reviews: item.reviews
