@@ -18,10 +18,10 @@ angular.module('meanstore')
       $location.path('/meanstore/cartlist');
     };
 
-    $scope.removeItemFromCart = function(item) {
-      cartItemsService.delete(item);
-      $location.path('/meanstore/cartlist');
-    };
+    // $scope.removeItemFromCart = function(item) {
+    //   cartItemsService.delete(item);
+    //   $location.path('/meanstore/cartlist');
+    // };
 
     $scope.cartItems = cartItemsService.query();
 
@@ -30,7 +30,7 @@ angular.module('meanstore')
     };
 
   })
-  .controller('itemControl', function($scope, $location, $routeParams, itemService) {
+  .controller('itemControl', function($scope, $location, $routeParams, itemService cartItemService) {
 
   	$scope.item = itemService.show({ id: $routeParams.id });
   	$scope.delete = function() { 
