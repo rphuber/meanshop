@@ -15,10 +15,10 @@ angular.module('meanstore')
 
     $scope.addItemToCart = function(item) {
       var newCartItem = {
-        name = item.name,
-        price = item.price,
-        description = item.description,
-        reviews = item.reviews
+        name: item.name,
+        price: item.price,
+        description: item.description,
+        reviews: item.reviews
       };
       cartItemsService.create(newCartItem);
       $location.path('/meanstore/cartlist');
