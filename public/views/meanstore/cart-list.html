@@ -3,5 +3,6 @@
 	<h3>{{item.price | currency}}</h3>
 	<p>{{item.content}}</p>
 	<a href="#/meanstore/list/{{item._id}}">view more</a>
-	<button class="btn btn-default" ng-href="#/meanstore/list">Back to Store</button>
+	<button class="btn btn-default" ng-click="removeItemFromCart(item)">Remove from Cart</button>
+	<button class="btn btn-default" ng-click="backToStore">Back to Store</button>
 </section>
