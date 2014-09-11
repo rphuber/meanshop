@@ -21,7 +21,7 @@ angular.module('meanstore')
 			)
 	})
 	.factory('cartItemsService', function($resource) {
-		return $resource('api/collections/meanstoreCart',
+		return $resource('api/collections/meanstorecart',
 			{},
 			{
 				query: { method: 'GET', isArray: true },
@@ -29,7 +29,7 @@ angular.module('meanstore')
 			});
 	})
 	.factory('cartItemService', function($resource) {
-		return $resource('api/collections/meanstoreCart/:id',
+		return $resource('api/collections/meanstorecart/:id',
 			{
 				id: '@_id'
 			},
