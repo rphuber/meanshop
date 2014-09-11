@@ -16,6 +16,10 @@ angular
         templateUrl: 'views/meanstore/store-list.html',
         controller: 'itemsControl'
       })
+      .when('/meanstore/list', {
+        templateUrl: 'views/meanstore/store-list.html',
+        controller: 'itemsControl'
+      })
       .when('/meanstore/list/:id', {
         templateUrl: 'views/meanstore/store-detail.html',
         controller: 'itemsControl'
