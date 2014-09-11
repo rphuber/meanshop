@@ -15,7 +15,7 @@ angular.module('meanstore')
     $scope.addItemToCart = function(item) {
       cartItemsService.create(item);
       console.log(item);
-      $location.path('/meanstoreAdmin/list');
+      $location.path('/meanstore/cartList');
     };
     $scope.cartItems = cartItemsService.query();
 

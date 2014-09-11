@@ -20,6 +20,10 @@ angular
         templateUrl: 'views/meanstore/store-detail.html',
         controller: 'itemsControl'
       })
+      .when('/meanstore/cartList', {
+        templateUrl: 'views/meanstore/cart-list.html',
+        controller: 'itemsControl'
+      })
       .when('/meanstoreAdmin/list', {
         templateUrl: 'views/meanstoreAdmin/admin-list.html',
         controller: 'itemsControl'

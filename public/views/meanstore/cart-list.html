@@ -1,0 +1,7 @@
+<section class="panel" data-ng-repeat="item in cartItems">
+	<h2>{{item.title}}</h2>
+	<h3>{{item.price | currency}}</h3>
+	<p>{{item.content}}</p>
+	<a href="#/meanstore/list/{{item._id}}">view more</a>
+	<button class="btn btn-default" ng-href="#/meanstore/list">Back to Store</button>
+</section>
