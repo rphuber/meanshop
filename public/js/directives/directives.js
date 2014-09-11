@@ -3,5 +3,5 @@ angular.module("meanstore")
 		return {
 			restrict: "E", 
 			templateUrl: "views/directives/sitemenu.html"
-		},
+		}
 	});
